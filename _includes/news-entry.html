@@ -1,0 +1,4 @@
+<li class="news-item{% if item.featured %} news-featured{% endif %}">
+<div class="news-date"><time datetime="{{ item.date }}">{{ item.date_label }}</time>{% if item.upcoming %}<span class="news-upcoming">Upcoming</span>{% endif %}</div>
+<p>{{ item.text }}</p>
+</li>

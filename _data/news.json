@@ -1,0 +1,29 @@
+[
+  {
+    "date": "2027-06-14",
+    "date_label": "June 14–25, 2027",
+    "upcoming": true,
+    "featured": true,
+    "text": "I am co-organizing the <a href=\"https://sites.google.com/view/2027g2s3/home\">2027 Gene Golub SIAM Summer School</a> on Nonlinear Solvers and Preconditioning Techniques for Multiphysics PDEs.<br>Corpus Christi, Texas"
+  },
+  {
+    "date": "2026-07-01",
+    "date_label": "July 2026",
+    "text": "Awarded <a href=\"https://www.nsf.gov/awardsearch/show-award?AWD_ID=2603912\">NSF DMS-2603912</a> as PI: A Learning-Augmented Framework for Multi-Level Multiscale Modeling.<br>US$199,000 · July 2026–June 2029"
+  },
+  {
+    "date": "2026-06-01",
+    "date_label": "June 2026",
+    "text": "Awarded <a href=\"https://www.nsf.gov/awardsearch/show-award?AWD_ID=2608740\">NSF DMS-2608740</a> as PI: Energy-Stable Neural Basis Methods for Multiscale Porous Media Flow.<br>US$300,000 · June 2026–May 2029"
+  },
+  {
+    "date": "2026-03-30",
+    "date_label": "March 30, 2026",
+    "text": "The CBMS conference I co-organized at the University of Houston was featured in <a href=\"https://www.siam.org/publications/siam-news/articles/cbms-conference-research-at-the-interface-of-applied-mathematics-and-machine-learning/\">SIAM News</a>."
+  },
+  {
+    "date": "2025-06-01",
+    "date_label": "June 2025",
+    "text": "Awarded <a href=\"https://www.nsf.gov/awardsearch/show-award?AWD_ID=2430460\">NSF DMS-2430460</a> as Co-PI for the <a href=\"https://www.math.uh.edu/cbms-amml/\">CBMS Conference: Research at the Interface of Applied Mathematics and Machine Learning</a>.<br>US$42,244 · June 2025–May 2026"
+  }
+]

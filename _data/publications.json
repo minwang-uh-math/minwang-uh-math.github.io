@@ -1,0 +1,177 @@
+[
+  {
+    "title": "Solving and Learning Navier-Stokes Dynamics with the Neural Basis Method",
+    "authors": "Yuhe Wang, Zhu Wang, Min Wang",
+    "venue": "",
+    "status": "Submitted",
+    "arxiv": "",
+    "year": 2026
+  },
+  {
+    "title": "Learning Nonlinear Transient Dynamics in Fluid Flow Networks with the Neural Basis Method",
+    "authors": "Aijaz Nazir, Yuhe Wang, Shahrear K Rasel, Min Wang",
+    "venue": "",
+    "status": "Submitted",
+    "year": 2026,
+    "arxiv": ""
+  },
+  {
+    "title": "Perceptually Regularized Diffusion Model for Image Super-Resolution",
+    "authors": "Chuxiangbo Wang, Pavithra Venkatachalapathy, Ying Liang, Min Wang, Jing Qin, Yifei Lou, Weihong Guo",
+    "venue": "",
+    "status": "Under review",
+    "year": 2026,
+    "arxiv": "2609.02016"
+  },
+  {
+    "title": "Solving and Learning Advective Multiscale Darcian Dynamics with the Neural Basis Method",
+    "authors": "Yuhe Wang, Min Wang",
+    "venue": "",
+    "status": "Under review",
+    "year": 2026,
+    "arxiv": "2602.17776"
+  },
+  {
+    "title": "Parametrization of Subgrid Scales in Long-Term Simulations of the Shallow-Water Equations Using Machine Learning and Convex Limiting",
+    "authors": "Md Amran Hossan Mojamder, Zhihang Xu, Min Wang, Ilya Timofeyev",
+    "venue": "Fluids 11.3 (2026): 76",
+    "status": "Published",
+    "year": 2026,
+    "arxiv": "",
+    "url": "https://www.mdpi.com/2311-5521/11/3/76"
+  },
+  {
+    "title": "Implicit-Explicit Scheme with Multiscale Vanka Two-Grid Solver for Heterogeneous Unsaturated Poroelasticity",
+    "authors": "Maria Vasilyeva, Ben S Southworth, Yunhui He, Min Wang",
+    "venue": "Electronic Transactions on Numerical Analysis 66 (2026): 1–31",
+    "status": "Published",
+    "year": 2026,
+    "arxiv": "",
+    "url": "https://doi.org/10.1553/etna_vol66s1"
+  },
+  {
+    "title": "Weak TransNet: A Petrov-Galerkin based neural network method for solving elliptic PDEs",
+    "authors": "Zhihang Xu, Min Wang, Zhu Wang",
+    "venue": "Journal of Scientific Computing 107.2 (2026): 60",
+    "status": "Published",
+    "year": 2026,
+    "arxiv": "",
+    "url": "https://link.springer.com/article/10.1007/s10915-026-03273-0"
+  },
+  {
+    "title": "Numerical Methods for Solving Nonlinearly Coupled Poisson Equations in Dual-Continuum Modeled Porous Electrodes",
+    "authors": "Yuhe Wang, Min Wang, Zhihang Xu",
+    "venue": "",
+    "status": "Under review",
+    "year": 2025,
+    "arxiv": "2507.22818"
+  },
+  {
+    "title": "Multicontinuum Splitting Scheme for Multiscale Flow Problems",
+    "authors": "Yalchin Efendiev, Wing Tat Leung, Buzheng Shan, Min Wang",
+    "venue": "Journal of Computational Physics 540 (2025): 114265",
+    "status": "Published",
+    "year": 2025,
+    "arxiv": "",
+    "url": "https://doi.org/10.1016/j.jcp.2025.114265"
+  },
+  {
+    "title": "Neural Network Based Variational Methods for Solving Quadratic Porous Medium Equations in High Dimensions",
+    "authors": "Min Wang, Jianfeng Lu",
+    "venue": "Communications in Mathematics and Statistics 11.1 (2023): 21–57",
+    "status": "Published",
+    "year": 2023,
+    "arxiv": "",
+    "url": "https://link.springer.com/article/10.1007/s40304-023-00339-5"
+  },
+  {
+    "title": "A Learning-based Projection Method for Model Order Reduction of Transport Problems",
+    "authors": "Zhichao Peng, Min Wang, Fengyan Li",
+    "venue": "Journal of Computational and Applied Mathematics 418 (2023): 114560",
+    "status": "Published",
+    "year": 2023,
+    "arxiv": "",
+    "url": "https://doi.org/10.1016/j.cam.2022.114560"
+  },
+  {
+    "title": "Nonlinear Reduced DNN Models for State Estimation",
+    "authors": "Wolfgang Dahmen, Min Wang, Zhu Wang",
+    "venue": "Communications in Computational Physics 32 (2022): 1–40",
+    "status": "Published",
+    "year": 2022,
+    "arxiv": "",
+    "url": "https://doi.org/10.4208/cicp.OA-2021-0217"
+  },
+  {
+    "title": "Mixed Generalized Multiscale Finite Element Method for Flow Problem in Thin Domains",
+    "authors": "Denis Spiridonov, Maria Vasilyeva, Min Wang, Eric T. Chung",
+    "venue": "Journal of Computational and Applied Mathematics 416 (2022): 114577",
+    "status": "Published",
+    "year": 2022,
+    "arxiv": "",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0377042722002849"
+  },
+  {
+    "title": "A priori Generalization Analysis of the Deep Ritz Method for Solving High Dimensional Elliptic Equations",
+    "authors": "Jianfeng Lu, Yulong Lu, Min Wang",
+    "venue": "Conference on Learning Theory, PMLR (2021)",
+    "status": "Published",
+    "year": 2021,
+    "arxiv": "",
+    "url": "https://proceedings.mlr.press/v134/lu21a.html"
+  },
+  {
+    "title": "Deep Multiscale Model Learning",
+    "authors": "Yating Wang, Siu Wun Cheung, Eric T. Chung, Yalchin Efendiev, Min Wang",
+    "venue": "Journal of Computational Physics 406 (2020): 109071",
+    "status": "Published",
+    "year": 2020,
+    "arxiv": "",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0021999119307764"
+  },
+  {
+    "title": "Generalized Multiscale Multicontinuum Model for Fractured Vuggy Carbonate Reservoirs",
+    "authors": "Min Wang, Siu Wun Cheung, Eric T. Chung, Maria Vasilyeva, Yuhe Wang",
+    "venue": "Journal of Computational and Applied Mathematics 366 (2020): 112370",
+    "status": "Published",
+    "year": 2020,
+    "arxiv": "",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0377042719303735"
+  },
+  {
+    "title": "Reduced-order Deep Learning for Flow Dynamics. The Interplay between Deep Learning and Model Reduction",
+    "authors": "Min Wang, Siu Wun Cheung, Wing Tat Leung, Eric T. Chung, Yalchin Efendiev, Mary Wheeler",
+    "venue": "Journal of Computational Physics 401 (2020): 108939",
+    "status": "Published",
+    "year": 2020,
+    "arxiv": "",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0021999119306448"
+  },
+  {
+    "title": "Prediction of Discretization of GMsFEM using Deep Learning",
+    "authors": "Min Wang, Siu Wun Cheung, Eric T. Chung, Yalchin Efendiev, Wing Tat Leung, Yating Wang",
+    "venue": "Mathematics 7.5 (2019): 412",
+    "status": "Published",
+    "year": 2019,
+    "arxiv": "",
+    "url": "https://www.mdpi.com/2227-7390/7/5/412"
+  },
+  {
+    "title": "Generalized Multiscale Coupling of Triple-Continuum Model and Discrete Fracture Network for Carbonate Reservoir Simulation",
+    "authors": "Min Wang, Chenji Wei, Hongqing Song, Yalchin Efendiev, Yuhe Wang",
+    "venue": "SPE Annual Technical Conference and Exhibition (2017)",
+    "status": "Published",
+    "year": 2017,
+    "arxiv": "",
+    "url": "https://doi.org/10.2118/187333-MS"
+  },
+  {
+    "title": "The Recognition of CAPTCHA",
+    "authors": "Min Wang, Tianhui Zhang, Wenrong Jiang, Hao Song",
+    "venue": "Journal of Computer and Communications 2.2 (2014): 14–19",
+    "status": "Published",
+    "year": 2014,
+    "arxiv": "",
+    "url": "https://www.scirp.org/journal/paperinformation?paperid=41854"
+  }
+]

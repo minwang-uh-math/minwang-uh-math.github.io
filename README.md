@@ -1,96 +1,54 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Min Wang — Academic Homepage
 
-![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
+English academic homepage for Min Wang, Assistant Professor of Mathematics at University of Houston. Built with Jekyll for the existing GitHub Pages repository.
 
-# Getting Started
+## 更新内容
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+- `_pages/about.md`：照片、个人简介、教育经历、博士后经历和新闻时间轴。
+- `_data/news.json`：新闻内容和排序日期；默认展示最新 3 条，其余自动折叠。资助获奖消息目前按 CV 中的项目开始月份排列。
+- `_pages/research.md`：研究方向和项目资助，按 Active、Completed 分类，并列出金额。
+- `_data/publications.json`：论文、作者、期刊、年份、投稿状态、出版商链接（url）和 arXiv 编号。
+- `_pages/teaching.html`：当前课程和可折叠的历史教学经历。
+- `_pages/people.md`：Team 页面，按 Current 和 Previous 分类，不展示成员指导时间。
+- `_pages/talks.html`：精选报告和学术服务。
+- `images/min-wang.jpeg`：首页照片。
+- `_data/navigation.yml`：顶部导航。
+- `_layouts/academic.html`：共享页面结构、单位和联系方式。
+- `assets/css/academic.css`：样式和手机适配。
 
-See more info at https://academicpages.github.io/
+首页采用浅色个人信息栏与正文左右分栏，其他页面保持简洁单栏，使用深红色点缀和较大的字体；手机上自动上下排列。Research 介绍使用本人提供的文字。网站不提供 CV 下载，不展示准备中的论文或博士委员会信息。
 
-## Running locally
+## 快速查看效果（无需 Ruby）
 
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+本次已准备好 Python 预览工具。在项目目录运行：
 
-1. Clone the repository and made updates as detailed above.
-
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
-
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
-
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-You can build and execute the container by running the following command in the repository:
-
-```bash
-chmod -R 777 .
-docker compose up
+```sh
+python3 scripts/preview.py
 ```
 
-You should now be able to access the website from `localhost:4000`.
+然后打开 http://127.0.0.1:4000 。按 `Ctrl+C` 停止；修改内容后重新运行即可更新预览。
 
-### Using the DevContainer in VS Code
+首次使用或临时依赖目录已被清理时，先安装：
 
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development coontainer configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
+```sh
+python3 -m pip install --target local/preview-deps python-liquid markdown PyYAML
+```
 
-# Maintenance
+此方式渲染实际页面内容、共享布局和样式，用于本地查看效果；正式发布仍由 Jekyll 构建。
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+## Jekyll 本地预览
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+安装 Ruby 和 Bundler 后，在项目目录执行：
 
-## Bugfixes and enhancements
+```sh
+bundle install
+bundle exec jekyll serve
+```
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+打开终端显示的本地地址（通常为 `http://127.0.0.1:4000`）。
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+## GitHub Pages
 
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
+提交并推送至仓库中配置的 Pages 来源分支后，由 GitHub Pages 构建发布。预期地址为 https://minwang-uh-math.github.io/ 。本地修改本身不会更新线上站点。
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+原始 Academic Pages 模板及许可证保留。模板示例文章、论文、教学和演讲集合已从构建中排除；未使用的示例页面设为不发布。

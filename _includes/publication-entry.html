@@ -1,0 +1,7 @@
+<article class="publication">
+  <span class="publication-number">{{ publication_number }}.</span>
+  <h3>{% if paper.url and paper.url != '' %}<a href="{{ paper.url | escape }}">{{ paper.title | escape }}</a>{% elsif paper.arxiv and paper.arxiv != '' %}<a href="https://arxiv.org/abs/{{ paper.arxiv }}">{{ paper.title | escape }}</a>{% else %}{{ paper.title | escape }}{% endif %}{% if paper.status == 'Submitted' %} <span class="status">({{ paper.status }}{% if paper.year %}, {{ paper.year }}{% endif %})</span>{% endif %}</h3>
+  <p>{{ paper.authors | escape | replace: 'Min Wang', '<strong>Min Wang</strong>' }}</p>
+  {% if paper.venue != '' %}<p><em>{{ paper.venue | escape }}</em></p>{% endif %}
+  {% if paper.arxiv and paper.arxiv != '' %}<a class="paper-link" href="https://arxiv.org/abs/{{ paper.arxiv }}">arXiv:{{ paper.arxiv }}</a>{% endif %}
+</article>
